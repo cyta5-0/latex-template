@@ -1,0 +1,17 @@
+% metadata.tex - Metadatos para artículos en LaTeX con RDFa/Schema.org
+
+% Título y autores
+\title{Título del artículo en LaTeX con Metadatos Semánticos}  
+\author{Nombre del Autor\thanks{ORCID: 0000-0000-0000-0000, Afiliación}}  
+\date{\today}  
+
+% Palabras clave
+\keywords{Palabra clave 1, Palabra clave 2, Palabra clave 3}  
+
+% Licencia Creative Commons
+\usepackage{ccicons}
+\newcommand{\licencia}{\ccby \ccnc \ccsa}
+
+% Metadatos RDFa / Schema.org
+\usepackage{xmpincl} % Para incluir metadatos en PDF
+\includexmp{metadata} % Archivo RDF/XML externo con datos estructurados
