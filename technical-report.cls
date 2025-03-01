@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{technical-report}[2025/02/20 Technical Report Class]
+\ProvidesClass{cyta}[2025/02/20 cyta Class]
 
 % Cargar la clase base
 \LoadClass[a4paper,12pt]{article}
