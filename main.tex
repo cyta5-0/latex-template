@@ -1,14 +1,56 @@
-\documentclass{cyta}
+% Plantilla para Artículos Científicos en LaTeX - CyTA
+% Basado en la plantilla original con mejoras para integración con GitHub y curación semántica
+
+\documentclass[a4paper,12pt]{article}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+% Paquete para referencias en formato APA
 \usepackage[style=apa,sorting=nyt]{biblatex}
-\addbibresource{references.bib}
+\addbibresource{references.bib} 
+% Archivo .bib con las referencias
+\usepackage{lmodern}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{listings} % Para código fuente
+
+% Metadatos RDFa y Schema.org en LaTeX
+\hypersetup{
+pdfauthor={Nombre del Autor},
+pdftitle={Título del Artículo},
+pdfsubject={Disciplina científica},
+pdfkeywords={Palabras clave, CyTA, Web Semántica},
+pdfproducer={LaTeX con BibTeX},
+pdfcreator={pdfLaTeX}
+}
 
 % Cargar metadatos desde archivo externo
 \input{metadata}
 
-\title{\documentTitle}
-\author{\authorName \\ \affiliation}
+\title{\textbf{Título del Artículo Científico}}
+
+\author{
+Autor Uno $^{1,}$ \\
+\small $^1$ Afiliación 1, Ciudad, País \\
+\small \texttt{ORCID: 0000-0000-0000-0000} \\
+\small \texttt{email1@ejemplo.com} 
+\and
+Autor Dos $^{2,}$ \\
+\small $^2$ Afiliación 2, Ciudad, País \\
+\small \texttt{ORCID: 0000-0000-0000-0000} \\
+\small \texttt{email2@ejemplo.com} 
+\and
+Autor Tres $^{3,}$\\
+\small $^3$ Afiliación 3, Ciudad, País \\
+\small \texttt{ORCID: 0000-0000-0000-0000} \\
+\small \texttt{email3@ejemplo.com} 
+}
+
 \date{\today}
+
 
 % Metadatos semánticos RDFa/Schema.org
 % @context: https://schema.org
@@ -23,26 +65,27 @@
 \maketitle
 
 \begin{abstract}
-    \abstractText
-    Este es el resumen del artículo.
+Aquí va el resumen del artículo. Debe proporcionar una visión general del contenido y los hallazgos principales.
+
+\textbf{Keywords:} keyword 1; keyword 2; keyword 3, keyword 4; keyword 5
+
 \end{abstract}
 
 \section{Introducción}
-Aquí va la introducción del artículo.
+Texto introductorio...\cite{Autor2020}
 
 \section{Metodología}
-Descripción de la metodología utilizada.
+Texto de metodología...
 
 \section{Resultados}
-Presentación y análisis de los resultados obtenidos.
+Texto de resultados...
 
 \section{Discusión}
-Interpretación de los resultados en el contexto de la investigación.
+Texto de discusión...
 
 \section{Conclusión}
-Conclusión y posibles direcciones futuras.
+Texto de conclusión...
 
-\bibliography{references}
-\bibliographystyle{apalike}
 
+\printbibliography % Imprime las referencias automáticamente desde el archivo .bib
 \end{document}
