@@ -1,0 +1,62 @@
+% Plantilla para Artículos Científicos en LaTeX - CyTA
+% Basado en la plantilla original con mejoras para integración con GitHub y curación semántica
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{apacite} % Citas en APA
+\usepackage{lmodern}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{listings} % Para código fuente
+
+% Metadatos RDFa y Schema.org en LaTeX
+\hypersetup{
+    pdfauthor={Nombre del Autor},
+    pdftitle={Título del Artículo},
+    pdfsubject={Disciplina científica},
+    pdfkeywords={Palabras clave, CyTA, Web Semántica},
+    pdfproducer={LaTeX con BibTeX},
+    pdfcreator={pdfLaTeX}
+}
+
+\title{\textbf{Título del Artículo Científico}}
+\author{
+    Nombre del Autor $^{1,}$\footnote{ORCID: 0000-0000-0000-0000} \\
+    \small $^1$Afiliación Institucional, Ciudad, País \\
+    \small \texttt{email@ejemplo.com}
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    Aquí va el resumen del artículo. Debe proporcionar una visión general del contenido y los hallazgos principales.
+    \textbf{Palabras clave}: palabra1, palabra2, palabra3.
+\end{abstract}
+
+\section{Introducción}
+Texto introductorio...
+
+\section{Metodología}
+Texto de metodología...
+
+\section{Resultados}
+Texto de resultados...
+
+\section{Discusión}
+Texto de discusión...
+
+\section{Conclusión}
+Texto de conclusión...
+
+\bibliographystyle{apacite}
+\bibliography{referencias} % Archivo BibTeX con referencias
+
+\end{document}
