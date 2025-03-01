@@ -1,24 +1,13 @@
-\documentclass[a4paper,12pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage{geometry}
-\usepackage{authblk}
+\documentclass{cyta}
+
+% Cargar metadatos desde archivo externo
 \input{metadata}
 
-\geometry{left=2.5cm, right=2.5cm, top=3cm, bottom=3cm}
+\title{\documentTitle}
+\author{\authorName \\ \affiliation}
+\date{\today}
 
-% Paquete para referencias en formato APA
-\usepackage[style=apa,sorting=nyt]{biblatex}
-\addbibresource{references.bib} % Archivo .bib con las referencias
-
-%\title{Título del Informe}
-%\author[1]{Nombre del Autor 1}
-%\author[2]{Nombre del Autor 2}
-%\affil[1]{Institución 1, Correo Autor 1}
-%\affil[2]{Institución 2, Correo Autor 2}
-%\date{\today}
-% Metadatos semánticos
+% Metadatos semánticos RDFa/Schema.org
 % @context: https://schema.org
 % @type: ScholarlyArticle
 % headline: \documentTitle
@@ -26,59 +15,30 @@
 % datePublished: \today
 % publisher: CyTA
 
-\title{\documentTitle}
-\author{\authorName \\ \affiliation}
-\date{\today}
-
-
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-Este es el resumen del informe, donde se presenta una visión general del contenido y los principales hallazgos.
-
-\textbf{Keywords:} keyword 1; keyword 2; keyword 3, keyword 4; keyword 5
+    \abstractText
 \end{abstract}
 
 \section{Introducción}
-Aquí se describe el contexto del informe, los objetivos, como resultados a priori, y la motivación detrás del estudio.
-Además se especifica la audiencia para la cual se destina el informe (quién se espera que lo lea y actúe según recomendaciones y conclusiones).
-La función principal de la introducción es que:
-\begin{itemize}
-\item introduce el tema,
-\item determina su importancia,
-\item establece una revisión de sus antecedentes históricos en la problemática tratada a través de la literatura científica y tecnológica pertinente,
-\item explicita las teorías subyacentes del tema,
-\item indica el propósito o el motivo de la investigación,
-\item establece el alcance y los límites de la investigación, y
-\item establece la forma en que se planea desarrollar la problemática para alcanzar los objetivos.
-
-
-\end{itemize}
+Aquí va la introducción del artículo.
 
 \section{Metodología}
-Explicación de los métodos utilizados para llevar a cabo la investigación. Consecuentemente se realiza una descripción, lo suficientemente detallada y completa, de los procedimientos utilizados en la investigación, que les permita a los lectores evaluar la forma en que los resultados fueron obtenidos.
-Si la investigación incluía aparatos, instrumentos o reactivos, se requerirá de una descripción de ellos, su diseño y la precisión de los instrumentos.
+Descripción de la metodología utilizada.
 
 \section{Resultados}
-Presentación de los hallazgos obtenidos en la investigación, basados en los métodos establecidos y que serán esenciales para fundamentar las conclusiones. 
-
+Presentación y análisis de los resultados obtenidos.
 
 \section{Discusión}
-El autor interpreta los resultados más relevantes obtenidos que ya se han fundamentado en dicha sección; y por lo tanto no introduce ningún nuevo material. Se constituye en una síntesis de los puntos clave del informe, y se establecen posibles direcciones futuras.
+Interpretación de los resultados en el contexto de la investigación.
 
 \section{Conclusión}
-El autor interpreta los resultados más relevantes obtenidos.
-
-\section{Notas}
-Esta plantilla fue realizada en base al recuso publicado por CyTA titulado: Informes científicos y técnicos: detalles para su elaboración \cite{Perissé2019}; y a la revisión de literatura y desarrollos técnicos de ChatGPT\cite{ChatGPT2025}
-
-.
+Conclusión y posibles direcciones futuras.
 
 \bibliography{references}
-\bibliographystyle{apalike} % o natbib si usamos citaciones avanzadas
-\printbibliography % Imprime las referencias automáticamente desde el archivo .bib
-
+\bibliographystyle{apalike}
 
 \end{document}
