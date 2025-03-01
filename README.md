@@ -1,18 +1,16 @@
-# latex-template
+# GitHub + LaTeX para Ciencia Abierta
 
-## GitHub + LaTeX para Ciencia Abierta
-
-###  📌 **Visión del Proyecto**
+##  📌 **Visión del Proyecto**
 
 Integración con GitHub y LaTeX en el flujo de trabajo académico
 
 Generación de conocimiento en red. 🌱⚙️♻️
 
-### Objetivo
+## Objetivo
 
 Construir una plantilla para la edición de un artículo científico en LaTeX
 
-### Metodología
+## Metodología
 
 Integración con GitHub y LaTeX en el flujo de trabajo
 
