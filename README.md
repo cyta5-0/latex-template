@@ -1,4 +1,4 @@
-# Technical Report LaTeX Template
+# Artículo Científico LaTeX Template
 
 Este repositorio contiene una plantilla en **LaTeX** para la elaboración de *Artículo Científico*, optimizada para la comunidad de **CyTA**. La plantilla está diseñada para ser clara, estructurada y fácilmente adaptable a distintos tipos de informes técnicos.
 
